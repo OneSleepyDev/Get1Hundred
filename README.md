@@ -1,6 +1,11 @@
 # Get1Hundred
 A simple collect game made using Phaser
 
+# Screenshots
+![Image1](https://raw.githubusercontent.com/OneSleepyDev/Get1Hundred/master/get1hundred.PNG)
+![Image2](https://raw.githubusercontent.com/OneSleepyDev/Get1Hundred/master/get1hundred_end.PNG)
+
+
 # How to play
 Load Index.html and have at it! Move around the small area and try to collect 100 before the timer runs out.
 
