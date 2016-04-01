@@ -21,7 +21,7 @@ var winState = {
         var button = game.add.button(game.world.centerX, game.world.centerY, 'player', this.restart, this);
         button.anchor.set(0.5);
 
-        var author = game.add.text(this.game.width/2, this.game.height - this.game.height / 10, '© OneSleepyDev zZZ',
+        var author = game.add.text(this.game.width/2, this.game.height - this.game.height / 10, 'onesleepydev.org',
                                     { font: '24px Arial', fill: '#ffffff' });
         author.anchor.set(0.5);
 
