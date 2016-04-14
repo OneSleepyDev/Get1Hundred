@@ -1,6 +1,9 @@
 # Get1Hundred
 A simple collect game made using Phaser
 
+#Play the game
+http://onesleepydev.github.io/Get1Hundred/
+
 # Screenshots
 ![Image1](https://raw.githubusercontent.com/OneSleepyDev/Get1Hundred/master/get1hundred.PNG)
 ![Image2](https://raw.githubusercontent.com/OneSleepyDev/Get1Hundred/master/get1hundred_end.PNG)
