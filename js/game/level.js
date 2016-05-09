@@ -12,6 +12,14 @@ function create_level() {
 
     // Full screen Scale
     game.scale.fullScreenScaleMode = Phaser.ScaleManager.SHOW_ALL;
+
+    var button2 = game.add.button(this.game.width - this.game.width / 20, this.game.height / 20, 'player', gofull, this);
+    button2.anchor.set(0.5);
+    var fullScreenText = game.add.text(this.game.width - this.game.width / 20, this.game.height / 20, 'Fullscreen', {
+        font: '12px Arial',
+        fill: '#ffffff'
+    });
+    fullScreenText.anchor.set(0.5);
 }
 
 function update_level() {
