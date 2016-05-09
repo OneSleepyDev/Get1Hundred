@@ -6,9 +6,8 @@ function preload_players() {
     game.load.image('player', 'res/sprites/red-32x32.png');
 }
 
-
 function create_players() {
-    
+
     game.physics.startSystem(Phaser.Physics.ARCADE);
 
     // Player
@@ -30,22 +29,17 @@ function update_players() {
     createBaddies();
 
     game.physics.arcade.collide(redBlock, greenBlock);
-
     game.physics.arcade.collide(baddies, greenBlock);
     // Overlap checks won't affect the player, just check to see if it touched
     game.physics.arcade.overlap(redBlock, baddies, hitBaddie, null, this);
-
 }
 
-
-
 // Aftermarket functions :D
-
 function spawnBaddies(amt) {
     for (var i = 0; i < amt; i++) {
         var c = baddies.create(game.world.randomX, this.game.height / 10 + game.rnd.integerInRange(10, 300), 'baddie');
         c.body.velocity.x = game.rnd.integerInRange(10, 120);
-        c.body.velocity.y = game.rnd.integerInRange(120, 220);
+        c.body.velocity.y = game.rnd.integerInRange(120, 320); // sped up to 320 from 220
         c.body.collideWorldBounds = true;
         c.body.bounce.x = 1;
         c.body.bounce.y = 1;
@@ -88,9 +82,10 @@ function createBaddies() {
             // BONUS POINT!
             score++;
             break;
+        default:
+            break;
     }
 }
-
 
 // This will destroy every baddie the player touches
 function hitBaddie(redBlock, baddie) {
