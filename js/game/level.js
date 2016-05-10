@@ -1,10 +1,12 @@
+var music;
+
 function preload_level() {
     game.load.image('ground', 'res/sprites/green-32x32.png');
     game.load.audio('music', 'res/sfx/music.mp3');
 }
 
 function create_level() {
-    var music = game.add.audio('music');
+    music = game.add.audio('music');
     music.loopFull();
     game.physics.startSystem(Phaser.Physics.ARCADE);
 

@@ -38,7 +38,8 @@ var winState = {
 
     playAgain: function() {
         game.world.removeAll();
-
+        music.destroy();
+        
         // osd.js
         score = 0;
         scoreText = null;
@@ -47,6 +48,8 @@ var winState = {
         // players.js
         jumpTimer = 0;
         baddieCnt = 0;
+        
+        
 
         game.state.start('play');
     },
