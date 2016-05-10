@@ -27,4 +27,5 @@ Load Index.html and have at it!
 # Licenses
 * GPL V3 (My code)
 * CC-BY-SA (Not really much, they're just simple blocks at the moment)
-* CC-BY-SA Pick Up Coin Echo: http://opengameart.org/content/picked-coin-echo-2
+* CC-BY-SA Pick Up Coin Echo "pickup_echo": http://opengameart.org/content/picked-coin-echo-2
+* CC-BY-3.0 What a nice surprise "music": http://opengameart.org/content/what-a-nice-surprise-nes-version
