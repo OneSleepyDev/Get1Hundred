@@ -27,3 +27,4 @@ Load Index.html and have at it!
 # Licenses
 * GPL V3 (My code)
 * CC-BY-SA (Not really much, they're just simple blocks at the moment)
+* CC-BY-SA Pick Up Coin Echo: http://opengameart.org/content/picked-coin-echo-2

@@ -4,6 +4,7 @@ var baddieCnt = 0;
 function preload_players() {
     game.load.image('baddie', 'res/sprites/offwhite-16x16.png');
     game.load.image('player', 'res/sprites/red-32x32.png');
+    game.load.audio('catch', 'res/sfx/pickup_echo.wav');
 }
 
 function create_players() {
@@ -89,6 +90,8 @@ function createBaddies() {
 
 // This will destroy every baddie the player touches
 function hitBaddie(redBlock, baddie) {
+    var catchBaddie = game.add.audio('catch');
+    catchBaddie.play();
     baddie.kill();
     baddie.destroy();
     baddieCnt -= 1;
