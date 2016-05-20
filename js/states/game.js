@@ -28,7 +28,7 @@ else {
     screenSize[1] = 600;
 }
 
-var game = new Phaser.Game(screenSize[0], screenSize[1], Phaser.AUTO, 'game');
+var game = new Phaser.Game(screenSize[0], screenSize[1], Phaser.CANVAS, 'game');
 
 game.state.add('boot', bootState);
 game.state.add('load', loadState);
