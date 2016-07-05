@@ -16,10 +16,11 @@ function create_osd() {
     scoreText.font = 'Arial';
     scoreText.fontWeight = 'bold';
     scoreText.fontSize = 24;
-    var grd = scoreText.context.createLinearGradient(0, 0, 0, scoreText.height);
-    grd.addColorStop(0, textColor1);
-    grd.addColorStop(1, textColor2);
-    scoreText.fill = grd;
+    scoreText.fill = textColor1;
+    //var grd = scoreText.context.createLinearGradient(0, 0, 0, scoreText.height);
+    //grd.addColorStop(0, textColor1);
+    //grd.addColorStop(1, textColor2);
+    
 
     // Timer!
     timer = game.add.text(this.game.width / 2, this.game.height / 16, "Timer: 90")
@@ -28,10 +29,11 @@ function create_osd() {
     timer.font = 'Arial';
     timer.fontWeight = 'bold';
     timer.fontSize = 24;
-    var grd2 = timer.context.createLinearGradient(0, 0, 0, timer.height);
-    grd2.addColorStop(0, textColor1);
-    grd2.addColorStop(1, textColor2);
-    timer.fill = grd2;
+    timer.fill = textColor1;
+    //var grd2 = timer.context.createLinearGradient(0, 0, 0, timer.height);
+    //grd2.addColorStop(0, textColor1);
+    //grd2.addColorStop(1, textColor2);
+    
 }
 
 function update_osd() {
